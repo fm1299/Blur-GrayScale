@@ -88,12 +88,13 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </CudaCompile>
     <CudaCompile Include="grayScale.cu">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="car.jpeg" />
+    <Image Include="blur_image.jpg" />
     <Image Include="dog_img.jpg" />
+    <Image Include="gray_image.jpg" />
     <Image Include="person.jpg" />
     <Image Include="tiger.jpg" />
   </ItemGroup>

@@ -16,10 +16,13 @@
     <Image Include="person.jpg">
       <Filter>Resources</Filter>
     </Image>
-    <Image Include="dog_img.jpg">
+    <Image Include="gray_image.jpg">
       <Filter>Resources</Filter>
     </Image>
-    <Image Include="car.jpeg">
+    <Image Include="blur_image.jpg">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="dog_img.jpg">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>

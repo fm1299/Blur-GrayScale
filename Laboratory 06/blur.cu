@@ -29,6 +29,7 @@ void blur_grayKernel(unsigned char* in, unsigned char* out, int w, int h) {
         out[Row * w + Col] = (unsigned char)(pixVal / pixels);
     }
 }
+
 __global__
 void blurKernel(unsigned char* in, unsigned char* out, int w, int h) {
     int Col = blockIdx.x * blockDim.x + threadIdx.x;
@@ -55,7 +56,7 @@ void blurKernel(unsigned char* in, unsigned char* out, int w, int h) {
 }
 int main()
 {
-    cv::Mat img = cv::imread("D:/fmatt/Pictures/Wallpapers/LenovoWallPaper.jpg");
+    cv::Mat img = cv::imread("tiger.jpg");
     // Get image dimensions
     int width = img.cols;
     int height = img.rows;
@@ -80,6 +81,7 @@ int main()
 
     cv::imshow("Input Image", img);
     cv::imshow("Blurred Image", outputImage);
+    cv::imwrite("blur_image.jpg", outputImage);
     cv::waitKey(0);
 
     return 0;

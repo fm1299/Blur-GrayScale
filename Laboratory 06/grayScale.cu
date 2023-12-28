@@ -30,7 +30,7 @@ void colorToGreyscaleConversion(unsigned char* Pout, unsigned char* Pin, int wid
 
 int main()
 {
-    cv::Mat img = cv::imread("D:/fmatt/Pictures/Wallpapers/LenovoWallPaper.jpg");
+    cv::Mat img = cv::imread("tiger.jpg");
     // Get image dimensions
     int width = img.cols;
     int height = img.rows;
@@ -59,6 +59,7 @@ int main()
 
     // Display the images using OpenCV (optional)
     cv::imshow("Original Image", img);
+    cv::imwrite("gray_image.jpg", outputImage);
     cv::imshow("Grayscale Image", outputImage);
     cv::waitKey(0);
     cv::destroyAllWindows();
