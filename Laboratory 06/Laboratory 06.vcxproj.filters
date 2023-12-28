@@ -2,6 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <CudaCompile Include="blur.cu" />
+    <CudaCompile Include="grayScale.cu" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resources">
@@ -16,6 +17,9 @@
       <Filter>Resources</Filter>
     </Image>
     <Image Include="dog_img.jpg">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="car.jpeg">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>
